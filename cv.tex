@@ -1,0 +1,177 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[backend=biber, style=ieee, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{David Beinhauer} % Your name
+\address{
+ \href{https://github.com/dbeinhauer}{Github} \\
+ \href{www.linkedin.com/in/david-beinhauer-a0221a247}{LinkedIn}
+}
+\address{Phone: (+420) 777-186-273  \\ Email: \texttt{david.beinhauer@email.cz}} % Your phone number and email
+
+\definecolor{CarnegieMellonRed}{RGB}{196,18,48}
+
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{CarnegieMellonRed}{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+\setlength{\leftmargin}{1.5em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+\begin{document}
+
+\begin{rSection}{Research Interests}
+    I am primarily interested in the direct applications of computational 
+    neuroscience to clinical treatments, particularly in the areas of 
+    neurorehabilitation and neural restoration. My focus lies in developing 
+    machine learning-driven models that can be used for personalized therapies, 
+    aiming to improve patient outcomes in individuals with neurological impairments. 
+    I seek to bridge the gap between computational models and clinical interventions, 
+    exploring how neural prosthetics and other neurorestorative strategies can 
+    restore brain function and enhance the quality of life for patients. 
+    My work is driven by the goal of translating cutting-edge neuroscience and 
+    AI techniques into real-world solutions for medical challenges.
+\end{rSection}
+
+\begin{rSection}{Education}
+{\bf \large Charles University in Prague} \hfill {\em Expected June 2025} 
+\\ {\bf Master of Science (Mgr.) in Bioinformatics} \hfill
+\\ GPA: \textbf{1.33} (1-4 \vline \: 1 is the best)  \hfill
+\\ \textit{Relevant coursework: Computers and Cognitive Sciences, Biology of the Cell, 
+Spatiotemporal modeling and simulation of biological systems.
+}
+
+{\bf \large Charles University in Prague} \hfill {Sep 2019 - Sep 2022} 
+\\ {\bf Bachelor of Science (Bc.) in Computer Science} \hfill
+\\ Specialization: \textbf{Artificial Intelligence} \hfill
+\\ GPA: \textbf{1.28} (1-4 \vline \: 1 is the best)  \hfill
+\\ \textit{Related coursework: Introduction to Machine Learning, Deep Learning, 
+Probability and Statistics
+}
+
+\end{rSection}
+
+
+\begin{rSection}{Research Experience}
+\begin{rProject}{\large Modeling spatio-temporal dynamics in primary visual cortex 
+\newline using deep neural network model}{\em Ongoing}
+{Supervisor: \href{https://www.mff.cuni.cz/en/faculty/organizational-structure/people?hdl=11457}{Dr. Ján Antolík}}{CSNG}
+    \item \textbf{Master’s Thesis} \vline \: \href{https://github.com/dbeinhauer/mcs-source}{GitHub (Code)}
+    \item Developed a recurrent neural network model to simulate neuronal responses 
+    in V1 layers IV and II/III, based on stimuli from the Lateral Geniculate Nucleus (LGN).
+    \item Incorporated biological constraints to improve model interpretability and realism.
+    \item Utilized a data-driven model of the cat V1 cortex (Antolík et al., \emph{PLOS Computational Biology}, 2024) for training data.
+    \item Investigated the spatio-temporal dynamics of neuronal responses through simulation.
+    \item \em The results of this research are planned to be presented at a conference in May 2025, where my supervisor, Dr. Ján Antolík, is expected to attend, though this is subject to confirmation.
+\end{rProject}
+
+
+\begin{rProject}{\large Optimization of the Placement of Electric Vehicle Charging Stations}{}
+{Supervisor: \href{https://www.mff.cuni.cz/en/faculty/organizational-structure/people?hdl=4171}
+{Dr. Martin Pilát}}
+{KTIML}
+    \item \textbf{Bachelor's thesis} \vline \: 
+    \href{https://github.com/dbeinhauer/bcs-source}{GitHub (Code)},
+    \href{https://github.com/dbeinhauer/bcs-thesis}{GitHub (Thesis, \em Czech)}
+    \item Designed a traffic simulator to evaluate different machine learning 
+    optimization approaches.
+    \item Implemented and compared three optimization techniques to improve 
+    electric vehicle charging station placement.
+    \item Analyzed results and proposed an optimal placement strategy.
+\end{rProject}
+
+\newpage
+
+\begin{rProject}{\large Selected Coursework Research Projects}{}
+{}{}{}
+    \item Parkinson Disease Beta Oscillations 
+    {\href{https://github.com/dbeinhauer/parkinson_disease_project}{(GitHub)}}
+    \item Differences Between Acetylcholinesterase Inhibitors
+    {\href{https://github.com/dbeinhauer/acetylcholinester_inhibitors/blob/main/TeX/main.pdf}{(Report)}}
+    \item Ant Colony Model (\emph{Czech})
+    {\href{https://github.com/dbeinhauer/ant_colony_model/tree/main}{(GitHub)}}
+    \item Visual Search Experiment 
+    {\href{https://raw.githack.com/dbeinhauer/visual_search_experiment/main/visual-search-experiment-report.html}{(Report)}}
+    \item Eye-Tracking Data Analysis 
+    {\href{https://raw.githack.com/dbeinhauer/etra_challenge/main/etra_challenge_report.html}{(Report)}}
+\end{rProject}
+
+\end{rSection}
+
+% -------------------INDUSTRY EXPERIENCE-------------------
+
+\begin{rSection}{Industry Research Experience}
+\begin{rProject}{\large NLP Internhip in MSD Czech Republic}{Oct 2023 - Present}
+{}{}
+    \item Member of the Artificial Intelligence team, specializing in NLP applications
+    in the pharmaceutical sector.
+    \item Developed Large Language Model (LLM)-based solutions for scientific document
+    processing and data retrieval.
+    \item Researched and implemented Retrieval-Augmented Generation (RAG) 
+    for scientific data retrieval.
+    \item Led bi-weekly presentations to communicate research findings and progress.
+    \item Effectively communicated technical solutions to both specialists and 
+    non-specialists.
+    \item Delivered a functional demo of a novel LLM-powered retrieval system 
+    for internal use.
+\end{rProject}
+
+\end{rSection}
+
+
+% -------------------PUBLICATIONS-------------------
+% \begin{rSection}{Publications} \itemsep -2pt
+% \leavevmode\printbibliography[heading=none]
+% \end{rSection}
+
+% \newpage
+\begin{rSection}{Achievements} \itemsep -2pt
+\begin{rProject}{Scholarship for Academic Excellence}{}{2021, 2023}{Charles University}
+    \item Awarded twice as one of the top-performing students in both 
+    bachelor's and master's studies.
+\end{rProject}
+    
+\end{rSection}
+
+\begin{rSection}{Skills} \itemsep -2pt
+\begin{rSkills}
+Computational Neuroscience & 
+\begin{rSkillsList}
+    \item Spiking Neural Networks
+    \item Machine Learning Applications in Neuroscience Research
+    \item Spiking Data Analysis and Cortical Modeling
+\end{rSkillsList} \\
+General Research & 
+\begin{rSkillsList}
+    \item Problem-solving in interdisciplinary research
+    \item Scientific communication and presentations
+    \item Experimental design and data interpretation
+\end{rSkillsList} \\
+Computer Science & 
+\begin{rSkillsList}
+    \item Machine learning, statistics, data analysis
+    \item Mathematical modeling and software development
+    \item Data visualization
+\end{rSkillsList} \\
+Biology & 
+\begin{rSkillsList}
+    \item Neurobiology fundamentals
+    \item Visual processing mechanisms
+    \item Cell biology, genomics, and structural biology
+\end{rSkillsList} \\
+\end{rSkills}
+\end{rSection}
+\end{document}
