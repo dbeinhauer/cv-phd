@@ -118,10 +118,10 @@
   }  
   \smallskip
   \begin{list}{$\circ$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.4em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \itemsep -0.7em \vspace{-0.8em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{-0.3em} % Some space after the list of bullet points
 }
 
 \newenvironment{rSkills}[0]{ 
